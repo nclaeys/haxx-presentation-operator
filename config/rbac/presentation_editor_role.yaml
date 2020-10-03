@@ -1,0 +1,24 @@
+# permissions for end users to edit presentations.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: presentation-editor-role
+rules:
+- apiGroups:
+  - haxx.axxes.com
+  resources:
+  - presentations
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - haxx.axxes.com
+  resources:
+  - presentations/status
+  verbs:
+  - get

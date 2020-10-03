@@ -1,0 +1,19 @@
+apiVersion: haxx.axxes.com/v1
+kind: Presentation
+metadata:
+  name: example-presentation
+spec:
+  markdown: |
+        class: center, middle
+        # Kubernetes operators
+
+        Niels Claeys
+        ---
+
+        # Demo
+
+        1. Registered custom resource (CR) with markdown
+        2. Haxx operator noticed new CR
+        3. Haxx operator created cm and pod
+        4. Haxx presentation pod generated ppt from markdown
+        
