@@ -1,7 +1,7 @@
 apiVersion: haxx.axxes.com/v1
 kind: Presentation
 metadata:
-  name: example-presentation
+  name: example
 spec:
   markdown: |
         class: center, middle

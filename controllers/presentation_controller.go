@@ -169,7 +169,7 @@ func newPodForCR(cr *haxxv1.Presentation) *corev1.Pod {
 			Containers: []corev1.Container{
 				{
 					Name:  "slides",
-					Image: "manueldewald/presentation",
+					Image: "nilli9990/haxx-presentation:1.0",
 					VolumeMounts: []corev1.VolumeMount{
 						{
 							Name:      volumeName,
